@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capybara Advertisements | Attention into Influence</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'capy-black': '#121212',
+                        'capy-charcoal': '#1E1E1E',
+                        'capy-cream': '#F5F5F0', // Warm, premium off-white
+                        'capy-taupe': '#A8A29E',
+                        'capy-accent': '#C2B280', // Muted gold/beige
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Manrope"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        body {
+            background-color: #F5F5F0;
+            color: #121212;
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(194, 178, 128, 0.1) 0%, rgba(245, 245, 240, 0) 70%);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-capy-black selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-capy-cream/90 backdrop-blur-md border-b border-black/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-tight">
+                Capybara<span class="text-capy-taupe">.</span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="hover:text-capy-taupe transition-colors">Who We Are</a>
+                <a href="#services" class="hover:text-capy-taupe transition-colors">What We Do</a>
+                <a href="#work" class="hover:text-capy-taupe transition-colors">Work</a>
+                <a href="#contact" class="px-6 py-2 bg-capy-black text-white rounded-full hover:bg-opacity-80 transition-all duration-300">
+                    Talk to Us
+                </a>
+            </div>
+
+            <button class="md:hidden" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-capy-cream border-b border-black/5 p-6 absolute w-full">
+            <div class="flex flex-col space-y-4">
+                <a href="#about" class="text-lg font-serif">Who We Are</a>
+                <a href="#services" class="text-lg font-serif">What We Do</a>
+                <a href="#work" class="text-lg font-serif">Work</a>
+                <a href="#contact" class="text-lg font-bold text-capy-taupe">Start Campaign</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-40 pb-20 md:pt-60 md:pb-32 px-6 hero-gradient overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block mb-6 px-3 py-1 border border-black/10 rounded-full text-xs font-semibold uppercase tracking-widest text-capy-taupe">
+                Premium Creative Studio
+            </span>
+            <h1 class="font-serif text-5xl md:text-8xl font-medium leading-[1.1] mb-8 text-balance">
+                We Turn Attention <br> Into <span class="italic text-black/80">Influence.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                We build high-impact advertising and reel campaigns that don’t just look good — they perform.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 bg-capy-black text-white rounded-none hover:bg-gray-800 transition-all font-medium min-w-[180px]">
+                    👉 Start a Campaign
+                </a>
+                <a href="#work" class="px-8 py-4 border border-capy-black text-capy-black rounded-none hover:bg-capy-black hover:text-white transition-all font-medium min-w-[180px]">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-white border-t border-black/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="font-serif text-4xl md:text-5xl mb-8 leading-tight">
+                    Not Another Agency. <br>A Creative Powerhouse.
+                </h2>
+            </div>
+            <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <p>
+                    <strong class="text-black">Capybara Advertisements</strong> is a modern advertising and creative studio built for brands that want attention with intent.
+                </p>
+                <p>
+                    We specialize in performance-driven content, influencer-led storytelling, and visual narratives that actually move people — not just fill feeds. From concept to execution, we design campaigns that feel organic, look premium, and deliver results.
+                </p>
+                
+                <div class="pt-8 border-t border-black/5 mt-8">
+                    <p class="italic mb-4">"Attention is earned, not bought."</p>
+                    <p class="text-sm text-gray-500">
+                        Founded by <strong>King Polo</strong>, an industry veteran with 7+ years of experience. We stand at the intersection of storytelling, strategy, and culture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 bg-capy-cream">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="font-serif text-4xl mb-4">What We Do Best</h2>
+                <div class="h-0.5 w-20 bg-black"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 bg-white hover:shadow-xl transition-shadow duration-300 border border-black/5">
+                    <i data-lucide="film" class="w-8 h-8 mb-6 text-capy-taupe"></i>
+                    <h3 class="font-serif text-xl font-bold mb-4">Ad Films & Reels</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Short-form content engineered for reach, retention, and recall — designed for Instagram, YouTube & digital platforms.</p>
+                </div>
+                
+                <div class="p-8 bg-white hover:shadow-xl transition-shadow duration-300 border border-black/5">
+                    <i data-lucide="users" class="w-8 h-8 mb-6 text-capy-taupe"></i>
+                    <h3 class="font-serif text-xl font-bold mb-4">Influencer Marketing</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">We collaborate with creators who influence culture, not just algorithms. Real faces. Real engagement.</p>
+                </div>
+
+                <div class="p-8 bg-white hover:shadow-xl transition-shadow duration-300 border border-black/5">
+                    <i data-lucide="pen-tool" class="w-8 h-8 mb-6 text-capy-taupe"></i>
+                    <h3 class="font-serif text-xl font-bold mb-4">Brand Storytelling</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">We shape how your brand is seen, felt, and remembered — with clarity and consistency.</p>
+                </div>
+
+                <div class="p-8 bg-white hover:shadow-xl transition-shadow duration-300 border border-black/5">
+                    <i data-lucide="crosshair" class="w-8 h-8 mb-6 text-capy-taupe"></i>
+                    <h3 class="font-serif text-xl font-bold mb-4">Strategy & Execution</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">From concept to posting schedule, we handle everything with precision and purpose.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-capy-black text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-capy-taupe uppercase tracking-widest text-sm font-semibold">Our Approach</span>
+            <h2 class="font-serif text-4xl md:text-6xl mt-6 mb-12">Calm Outside. <br> Calculated Inside.</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 text-left md:text-center">
+                <div>
+                    <p class="text-xl md:text-2xl font-serif italic text-gray-300 mb-2">We don’t chase trends.</p>
+                    <p class="text-lg font-bold">We study behavior.</p>
+                </div>
+                <div>
+                    <p class="text-xl md:text-2xl font-serif italic text-gray-300 mb-2">We don’t shout for attention.</p>
+                    <p class="text-lg font-bold">We design content people choose to watch.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-gray-400 max-w-2xl mx-auto">
+                Every campaign is backed by strategy, creative instinct, and platform intelligence — so your brand doesn’t just exist online, it dominates attention.
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="font-serif text-4xl">Selected Work</h2>
+                <a href="#" class="text-sm border-b border-black pb-1 hover:text-capy-taupe hover:border-capy-taupe transition-colors">View All Archive</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="w-full h-[400px] bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1470&auto=format&fit=crop" alt="Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="mt-4 flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-xl group-hover:text-capy-taupe transition-colors">Product Launch</h3>
+                            <p class="text-sm text-gray-500">Strategy / Content</p>
+                        </div>
+                        <span class="text-xs border border-gray-300 px-2 py-1 rounded">2025</span>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer md:mt-16">
+                    <div class="w-full h-[400px] bg-gray-200 overflow-hidden relative">
+                         <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1638&auto=format&fit=crop" alt="Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="mt-4 flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-xl group-hover:text-capy-taupe transition-colors">Music Promotion</h3>
+                            <p class="text-sm text-gray-500">Influencer Campaign</p>
+                        </div>
+                        <span class="text-xs border border-gray-300 px-2 py-1 rounded">2025</span>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="w-full h-[400px] bg-gray-200 overflow-hidden relative">
+                         <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1374&auto=format&fit=crop" alt="Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="mt-4 flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-xl group-hover:text-capy-taupe transition-colors">Creator Collaboration</h3>
+                            <p class="text-sm text-gray-500">Reels / Production</p>
+                        </div>
+                        <span class="text-xs border border-gray-300 px-2 py-1 rounded">2024</span>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer md:mt-16">
+                    <div class="w-full h-[400px] bg-gray-200 overflow-hidden relative">
+                         <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1470&auto=format&fit=crop" alt="Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="mt-4 flex justify-between items-start">
+                        <div>
+                            <h3 class="font-serif text-xl group-hover:text-capy-taupe transition-colors">Brand Awareness</h3>
+                            <p class="text-sm text-gray-500">Visual Identity</p>
+                        </div>
+                        <span class="text-xs border border-gray-300 px-2 py-1 rounded">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
+            
+            <div>
+                <h2 class="font-serif text-3xl mb-8">Why Brands Choose Capybara</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="check" class="text-green-700 w-5 h-5"></i>
+                        <span class="text-lg text-gray-700">Strategic thinking over noise</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="check" class="text-green-700 w-5 h-5"></i>
+                        <span class="text-lg text-gray-700">Creator-first approach</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="check" class="text-green-700 w-5 h-5"></i>
+                        <span class="text-lg text-gray-700">Premium visual identity</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="check" class="text-green-700 w-5 h-5"></i>
+                        <span class="text-lg text-gray-700">Real results, not vanity metrics</span>
+                    </li>
+                </ul>
+                <p class="mt-8 font-serif text-xl italic text-gray-500">
+                    "We don’t work with everyone. We work with brands ready to grow."
+                </p>
+            </div>
+
+            <div class="bg-capy-cream p-10 border border-black/5 flex flex-col justify-center">
+                <span class="uppercase tracking-widest text-xs font-bold text-gray-400 mb-4">Backed by the Best</span>
+                <h3 class="font-serif text-3xl mb-4">Powered by CreatorsCartel</h3>
+                <p class="text-gray-600 mb-6">
+                    India’s No.1 Influencer Management & Marketing Company. This gives us access to top-tier creators, deep market insights, and execution at scale.
+                </p>
+                <div class="flex items-center gap-2 text-sm font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                    Access to Exclusive Talent
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-serif text-5xl md:text-7xl mb-8">Let’s Build Something People Remember.</h2>
+            <div class="flex flex-col md:flex-row gap-4 justify-center mt-12">
+                <button class="px-10 py-5 bg-capy-black text-white text-lg rounded-none hover:bg-gray-800 transition-all">
+                    👉 Start Your Campaign
+                </button>
+                <button class="px-10 py-5 border border-black bg-transparent text-lg rounded-none hover:bg-black hover:text-white transition-all">
+                    WhatsApp Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-capy-black text-white pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-gray-800 pb-16">
+            
+            <div>
+                <h3 class="font-serif text-3xl mb-4">Capybara.</h3>
+                <p class="text-gray-400 max-w-xs">Creative Advertising & Brand Strategy Studio.</p>
+                <p class="text-gray-500 text-sm mt-4">Powered by CreatorsCartel</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-16">
+                <div>
+                    <h4 class="font-bold mb-6 text-gray-300">Explore</h4>
+                    <ul class="space-y-3 text-gray-500 text-sm">
+                        <li><a href="#about" class="hover:text-white">Who We Are</a></li>
+                        <li><a href="#services" class="hover:text-white">Services</a></li>
+                        <li><a href="#work" class="hover:text-white">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-gray-300">Connect</h4>
+                    <ul class="space-y-3 text-gray-500 text-sm">
+                        <li><a href="mailto:hello@capybaraadvertisements.com" class="hover:text-white">hello@capybaraadvertisements.com</a></li>
+                        <li><a href="#" class="hover:text-white">@capybaraadvertisements</a></li>
+                        <li><a href="#" class="hover:text-white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-xs">
+            <p>&copy; 2026 Capybara Advertisements. All Rights Reserved.</p>
+            <p>Designed for Impact.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
